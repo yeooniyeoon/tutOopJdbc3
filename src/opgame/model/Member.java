@@ -1,11 +1,16 @@
 package opgame.model;
 
 public class Member {
+    String id;
+    boolean isLogined;
+    public Member(String rid, boolean risLogined) {
+    }
+
     public String getID() {
-        return null;
+        return id;
     }
 
     public boolean isLogined() {
-        return false;
+        return isLogined;
     }
 }
