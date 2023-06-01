@@ -49,8 +49,15 @@ public class GameTest {
     @Test
     public void testMinus() {
         int max = 10;
-        int a = 0;
-        int b = 0;
+//        int a = (int)(Math.random() * max);
+//        int b = (int)(Math.random() * a);
+        int a = (int)(Math.random() * max);
+        int b = (int)(Math.random() * max);
+        if (a < b) {
+            int tmp = 0;
+            a = b;
+            b = tmp;
+        }
         System.out.printf("%d + %d = %d", a, b, a - b);
         assertTrue(a - b >= 0);
     }
